@@ -20,7 +20,7 @@ use std::path::{Path, PathBuf};
 use std::borrow::Cow;
 use std::ops::Drop;
 use encoding::{all, Encoding, DecoderTrap};
-use hyper::header::{ContentType, Headers, ContentDisposition, DispositionParam,
+pub use hyper::header::{ContentType, Headers, ContentDisposition, DispositionParam,
                     DispositionType, Charset};
 use textnonce::TextNonce;
 use mime::{Attr, Mime, TopLevel, Value};
